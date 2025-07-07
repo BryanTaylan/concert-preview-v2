@@ -2,11 +2,14 @@ import { Link } from "react-router-dom";
 import { Search, Music } from "lucide-react";
 import "../css/NavBar.css";
 
+
 function NavBar() {
   return (
     <nav className="navbar">
       <div className="music-logo-container">
-        <Music className="music-logo" />
+        <Link to ="/">
+        <img src="/images/VenueView-Logo.png" className="music-logo" />
+        </Link>
       </div>
       <div className="navbar-brand">
         <Link to="/">VenueView</Link>

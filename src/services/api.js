@@ -21,3 +21,11 @@ export const searchConcert = async (query) => {
   const data = await response.json();
   return data._embedded?.events || [];
 };
+
+export const getConcertById = async (id) => {
+  const response = await fetch(
+    `${BASE_URL}events/${id}.json?apikey=${API_KEY}`
+  );
+  const data = await response.json();
+  return data;
+};

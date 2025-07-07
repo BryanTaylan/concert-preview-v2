@@ -1,4 +1,4 @@
-import React, { use } from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 import { getConcerts, searchConcert } from "../services/api";
 import ConcertCard from "../components/ConcertCard";
