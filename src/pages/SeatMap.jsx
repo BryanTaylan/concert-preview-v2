@@ -35,8 +35,7 @@ function SeatMap() {
     <div className="error">{error}</div>
   ) : (
     <div className="map-container">
-
-        <SeatMapCard concert={concert}/>
+      <SeatMapCard concert={concert} />
     </div>
   );
 }
